@@ -1,0 +1,27 @@
+.btn1 {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* الكلاس اللي هنضيفه ونشيله بالجافاسكريبت */
+.btn1.active {
+  border-color: red;
+  background-color: #ffe6e6;
+  color: red;
+}
+
+/* /////////////////////////////////////////////////// */
+
+/* كلاس عادي للزرار لما يكون متداس عليه */
+  .on {
+    background-color: lightgreen;
+    color: black;
+  }
+
+/* ////////////////////////////////////////////////////////// */
+
