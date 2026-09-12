@@ -1,16 +1,17 @@
 body {
-  background-color: #f4f7f6;
+  background-color: #e2e8f0; 
+  font-family: sans-serif;
 }
 
 #form {
   box-sizing: border-box;
-  margin: 50px auto;
+  margin: 50px auto 20px auto;
   width: 50%;
-  padding: 20px; /* بيدي مسافة جوية من كل الأطراف */
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
+  padding: 20px; 
+  background: rgba(220, 225, 230, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
   border-radius: 17px;
   text-align: center;
   transition: all 0.3s;
@@ -23,14 +24,15 @@ body {
 }
 
 #form:hover {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #form input {
   flex: 1;
   padding: 10px 15px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e1;
+  background: rgba(255, 255, 255, 0.8); 
   outline: none;
 }
 
@@ -39,4 +41,80 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  transition: 0.2s;
+  color: #334155;
+}
+
+#form button:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+
+#counter {
+  width: 50%;
+  margin: 10px auto;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  color: #475569;
+  padding-right: 5px;
+}
+
+#tasks-list {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+ /*  كارت التاسك   */
+#tasks-list li {
+  box-sizing: border-box;
+  padding: 15px 20px;
+  background: rgba(220, 225, 230, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 6px 8px 25px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+#tasks-list li:hover {
+  background: rgba(220, 225, 230, 0.85);
+  transform: translateY(-2px);
+}
+
+/* حركة الشطب على التاسك */
+#tasks-list li.completed span {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* زرار الديليت */
+#tasks-list li button {
+  background: rgba(239, 68, 68, 0.85);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+#tasks-list li button:hover {
+  background: rgba(220, 38, 38, 1);
 }
