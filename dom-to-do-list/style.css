@@ -118,3 +118,41 @@ body {
 #tasks-list li button:hover {
   background: rgba(220, 38, 38, 1);
 }
+/* ==================================
+   Media Queries (التجاوب مع الموبايل والتابلت)
+   ================================== */
+
+/* للشاشات الصغيرة (الموبايل والتابلت) */
+@media (max-width: 768px) {
+  #form,
+  #counter,
+  #tasks-list {
+    width: 90%; /* نوسع العرض عشان يناسب شاشة الموبايل */
+  }
+
+  #form {
+    margin: 30px auto 15px auto;
+    padding: 15px;
+    gap: 8px;
+  }
+
+  #form input {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  #form button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  #tasks-list li {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  #tasks-list li button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
