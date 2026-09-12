@@ -1,0 +1,42 @@
+body {
+  background-color: #f4f7f6;
+}
+
+#form {
+  box-sizing: border-box;
+  margin: 50px auto;
+  width: 50%;
+  padding: 20px; /* بيدي مسافة جوية من كل الأطراف */
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bolder;
+  color: black;
+}
+
+#form:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#form input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#form button {
+  flex-shrink: 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
