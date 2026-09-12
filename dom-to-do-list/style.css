@@ -119,40 +119,45 @@ body {
   background: rgba(220, 38, 38, 1);
 }
 /* ==================================
-   Media Queries (التجاوب مع الموبايل والتابلت)
+   Media Queries (التجاوب مع الموبايل)
    ================================== */
 
-/* للشاشات الصغيرة (الموبايل والتابلت) */
 @media (max-width: 768px) {
   #form,
   #counter,
   #tasks-list {
-    width: 90%; /* نوسع العرض عشان يناسب شاشة الموبايل */
+    width: 90%; /* نوسع العرض بالنسبة للشاشة */
   }
 
   #form {
-    margin: 30px auto 15px auto;
+    flex-wrap: wrap; /* يمنع خروج العناصر بره الكارت */
+    margin: 25px auto 15px auto;
     padding: 15px;
     gap: 8px;
   }
 
   #form input {
-    padding: 8px 12px;
+    width: 100%; /* الأنبوت ياخد السطر كامل على الموبايل */
+    flex: none;
+    box-sizing: border-box;
+    padding: 10px;
     font-size: 14px;
   }
 
   #form button {
-    padding: 8px 12px;
+    flex: 1; /* الأزرار تتقسم السطر اللي تحته بشكل متناسق */
+    padding: 10px;
     font-size: 13px;
+    text-align: center;
   }
 
   #tasks-list li {
-    padding: 12px 15px;
+    padding: 12px 14px;
     font-size: 14px;
+    gap: 10px;
   }
 
-  #tasks-list li button {
-    padding: 5px 10px;
-    font-size: 12px;
+  #tasks-list li span {
+    word-break: break-word; /* عشان لو الكلمة طويلة ما تخرجش بره التاسك */
   }
 }
