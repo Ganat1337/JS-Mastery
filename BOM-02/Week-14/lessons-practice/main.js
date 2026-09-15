@@ -36,3 +36,38 @@ function countdown(){
 console.log("*************************");
 /////////////////////////////////////////////
 
+// 5-Window Location Object
+
+// assign:(زرار Back شغال).
+
+// replace:(زرار Back مش هيرجعك).
+
+if(location.protocol !== "https:"){ console.log("Warning: Unsecure Connection");}
+let href = function(){ location.href = "https://google.com" }
+// let movetimer = setTimeout(href,5000)
+
+let move = document.querySelector("#move")
+let reload = document.querySelector("#reload")
+
+move.onclick = function(){location.replace("[https://google.com](https://google.com)")}
+reload.onclick = function(){location.reload("[https://google.com](https://google.com)")}
+
+///////////////////////////////////////////////////////////
+
+// 6-Window Open And Close
+let pop = document.querySelector("#pop")
+pop.onclick = function(){
+    window.open("https://google.com","_blank" ,"width=500,height=400,left=300" )
+}
+
+/////////////////////////////////////////////////////////////
+
+// 7-Window History Object
+
+let backBtn = document.getElementById("backBtn")
+let goTwoSteps = document.getElementById("goTwoSteps")
+
+backBtn.onclick = function(){history.back()}
+goTwoSteps.onclick = function(){history.go(-2)}
+
+console.log(history);
