@@ -81,3 +81,4 @@ let backend = ["Node.js", "Python"];
 
 let fullStack = [...frontend,"Git",...backend ]
 console.log(fullStack);
+console.log("*************************");
