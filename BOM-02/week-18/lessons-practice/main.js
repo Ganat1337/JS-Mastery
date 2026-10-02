@@ -51,3 +51,34 @@ let text = "Color or Colour? Contact us at info@site.com or support123@domain.ne
 
 let regExPattern = /(color?)?(colou?r)/ig
 console.log(text.match(regExPattern));
+console.log("*******************************");
+////////////////////////////////////////////////////////////////////////
+
+
+// Regular Expression – Quantifiers Part 2
+// d ---> digit "number"
+// {} رقم او من رقم لرقم او فتره مفتوحة 
+let users = "User1998 User2004 User95";
+
+let regUser = /User\d{4}/ig
+console.log(users.match(regUser));
+console.log("*******************************");
+////////////////////////////////////////////////////////////////////////
+
+// Regular Expression – Quantifiers Part 3
+  // $  => End With Something
+  // ^  => Start With Something
+  // ?= => Followed By Something
+  // ?! => Not Followed By Something
+  let prices = "Item1: 100$ Item2: 200LE Item3: 300$ Item4: 400EUR";
+
+  let sign = /\d+(?=\$)/g
+  console.log(prices.match(sign));
+
+  let notSign = /\d+(?!\$)/g
+  console.log(prices.match(notSign));
+  console.log("*******************************");
+////////////////////////////////////////////////////////////////////////
+
+// replace 
+// replace-all
