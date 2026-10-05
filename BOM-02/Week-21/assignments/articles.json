@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Title 1",
+    "body": "Article Number 1 Body",
+    "author": "Ganat",
+    "category": "CS"
+  },
+  {
+    "id": 2,
+    "title": "Title 2",
+    "body": "Article Number 2 Body",
+    "author": "Ali",
+    "category": "Science"
+  },
+  {
+    "id": 3,
+    "title": "Title 3",
+    "body": "Article Number 3 Body",
+    "author": "Mahmoud",
+    "category": "Programming"
+  },
+  {
+    "id": 4,
+    "title": "Title 4",
+    "body": "Article Number 4 Body",
+    "author": "Osama",
+    "category": "Web"
+  },
+  {
+    "id": 5,
+    "title": "Title 5",
+    "body": "Article Number 5 Body",
+    "author": "Sayed",
+    "category": "Tech"
+  }
+]
